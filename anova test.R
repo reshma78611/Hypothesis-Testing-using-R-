@@ -1,17 +1,25 @@
-#######################Anova Test(ContractRenewal_Data(unstacked))###############################
+###############Anova Test(LABTAT)###############
 
-library(readxl)
-CRD<-read_excel("C:/Users/HP/Desktop/datasets/ContractRenewal_Data(unstacked).xlsx")  
-View(CRD)
-Stacked_Data <- stack(CRD)
-View(Stacked_Data)
-attach(Stacked_Data)
+library(readr)
+labtat<-read.csv(file.choose())
+View(labtat)
+attach(labtat)
 
-#var.test(CRD$`Supplier A`,CRD$`Supplier B`,CRD$`Supplier C`)
+# Apply 'stack' function
+
+stacked_labtat<-stack(labtat)
+View(stacked_labtat)
+
+############Variance test############
+
 library(car)
-leveneTest(values,ind,data= Stacked_Data)
+leveneTest(values,ind,data=stacked_labtat)
+#p-value=0.7 >0.05, accept H0 =>Equal variance
 
-Anova_results <- aov(values~ind,data = Stacked_Data)
-summary(Anova_results)
-# p-value = 0.104 > 0.05 accept null hypothesis 
-# All Proportions are equal 
+#############Anova Test############
+
+Anova_result<-aov(values~ind,data=stacked_labtat)
+summary(Anova_result)
+#p-value= 2e-16 < 0.05, accept Ha
+#H0: difference in avg TAT of 4 laborataries=0
+#Ha: difference in avg TAT of 4 laborataries!=0 

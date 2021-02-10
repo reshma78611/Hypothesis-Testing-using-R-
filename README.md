@@ -1,15 +1,17 @@
 # Hypothesis-Testing-using-R-
 
-Hypothesis Testing : ( Purely Assumptions Test )
+## Hypothesis Testing : ( Purely Assumptions Test )
+
 1. Null hypothesis ( H0)
 2. Alternate hypothesis (H1)
 
       1. Null Hypothesis:
-              No action to be taken
+              *No action to be taken*
       2. Alternate Hypothesis:
-              Action to be taken
+              *Action to be taken*
  
  Different types of Hypothesis Test used in this repository with code in R:
+ 
  1.  1 sample sign test
  2.  1 sample T-test
  3.  1 sample Z-test
@@ -24,8 +26,11 @@ Hypothesis Testing : ( Purely Assumptions Test )
  12. 2 proportion test
  13. Chisquare test
  
- Data used:
+## Data used:
        Bahaman.xlsx,Buyer ratio.csv,contact_renewal data,customer_order_form,cutlets.csv,Faltoons.csv,johny_talkers.xlsx,promotion.xlsx,labtat.csv.
        
-Programming:  R language
+## Programming: 
+            R language
  
+## **The Codes regarding this Hypothesis Testing with different methods and with different datasets are present in this Repository in detail**
+          

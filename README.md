@@ -32,5 +32,5 @@
 ## Programming: 
             R language
  
-## **The Codes regarding this Hypothesis Testing with different methods and with different datasets are present in this Repository in detail**
+**The Codes regarding this Hypothesis Testing with different methods and with different datasets are present in this Repository in detail**
           
